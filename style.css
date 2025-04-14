@@ -973,14 +973,14 @@ input:checked + .slider .clouds {
     }
     .navBar img {
         margin: 0;
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
     }
     .Choose {
         margin-left: 2rem;
     }
     .Choose-button {
-        font-size: 1px;
+        font-size: 10px;
         height: 20px;
         padding: 0.5rem 1.5rem;
         box-shadow: none;
@@ -990,8 +990,8 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 5px;
-        height: 5px;
+        width: 40px;
+        height: 40px;
     }
     .container {
         margin-top: 30px;
