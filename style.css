@@ -851,7 +851,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 391px) and (min-width: 360px){
     .navBar {
-        height: 80px;
+        height: 180px;
         width: 100vw;
     }
     .navBar img {
@@ -890,7 +890,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 360px) and (min-width: 320px){
     .navBar {
-        height: 80px;
+        height: 180px;
         width: 100vw;
     }
     .navBar img {
@@ -932,7 +932,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 320px) and (min-width: 280px){
     .navBar {
-        height: 80px;
+        height: 180px;
         width: 100vw;
     }
     .navBar img {
@@ -974,7 +974,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 280px) and (min-width: 240px){
     .navBar {
-        height: 80px;
+        height: 120px;
         width: 100vw;
     }
     .navBar img {
