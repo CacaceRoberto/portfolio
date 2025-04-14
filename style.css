@@ -965,3 +965,45 @@ input:checked + .slider .clouds {
         font-size: 14px;
     }
 }
+
+@media (max-width: 280px) and (min-width: 240px){
+    .navBar {
+        height: 80px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
+    .Choose {
+        margin-left: 2rem;
+    }
+    .Choose-button {
+        font-size: 1px;
+        height: 20px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 5px;
+        height: 5px;
+    }
+    .container {
+        margin-top: 30px;
+        height: 40px;
+    }
+    .containerMe h2 {
+        font-size: 6px;
+    }
+    .myName {
+        font-size: 12px;
+    }
+    .switch {
+        transform: scale(0.5);
+    }
+}
