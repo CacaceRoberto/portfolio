@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Portfolio</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        </head>
+
+        <body>
+            <section id="home"></section>
+            <div class="navBar">
+                
+                <img src="./image/Logo.png" alt="Logo" id="logo">
+
+                <div class="Choose">
+                    <button class="Choose-button"><a href="#home" id="chooseOne">HOME</a></button>
+                    <button class="Choose-button"><a href="#aboutMe" id="chooseTwo">MORE ABOUT ME</a></button>
+                    <button class="Choose-button"><a href="./projects/index.html" target="_blank" id="chooseThree">PROJECTS</a></button>
+                </div>
+
+                <div class="Circles">
+                    <button class="circle" onclick="window.open('https://github.com/CacaceRoberto', '_blank')"></button>
+                    <button class="circle" onclick="window.open('https://www.instagram.com/_roberto.cacace_/', '_blank');"></button>
+                    <button class="circle"></button>
+                </div>
+
+            </div>
+
+  <!--  /***************************  ABOUT ME ***************************/ -->
+            <div class="container">
+                <div class="containerMe">
+                    <h2 style="color: white" id="container">Hello, my name is<br>
+                        <span class="myName" id="myName">ROBERTO CACACE<br></span>
+                    </h2>
+
+                    <!--********************** toggle switch ***************************-->
+                    <label class="switch">
+                        <input type="checkbox" id="toggle" onclick="changeMode()">
+                        <span class="slider">
+                            
+                            <div class="moons-hole">
+                                <div class="moon-hole"></div>
+                                <div class="moon-hole"></div>
+                                <div class="moon-hole"></div>
+                            </div>
+                            <div class="black-clouds">
+                                <div class="black-cloud"></div>
+                                <div class="black-cloud"></div>
+                                <div class="black-cloud"></div>
+                            </div>
+                            <div class="clouds">
+                                <div class="cloud"></div>
+                                <div class="cloud"></div>
+                                <div class="cloud"></div>
+                                <div class="cloud"></div>
+                                <div class="cloud"></div>
+                                <div class="cloud"></div>
+                                <div class="cloud"></div>
+                            </div>
+                            <div class="stars">
+                                <svg class="star" viewBox="0 0 20 20">
+                                    <path
+                                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                                    ></path>
+                                </svg>
+                                <svg class="star" viewBox="0 0 20 20">
+                                    <path
+                                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                                    ></path>
+                                </svg>
+                                <svg class="star" viewBox="0 0 20 20">
+                                    <path
+                                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                                    ></path>
+                                </svg>
+                                <svg class="star" viewBox="0 0 20 20">
+                                    <path
+                                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                                    ></path>
+                                </svg>
+                                <svg class="star" viewBox="0 0 20 20">
+                                    <path
+                                      d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </span>
+                    </label>
+                    <!--********************** toggle switch ***************************-->
+
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </html>

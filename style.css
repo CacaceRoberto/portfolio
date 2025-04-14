@@ -1,0 +1,773 @@
+body{
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease-in-out, 
+                color 0.5s ease-in-out;
+}
+
+/*
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgb(21, 92, 111);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:black;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+*/
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: zoomIn 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, 
+                background-color 0.3s ease-in-out, 
+                color 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out;
+}
+
+.navBar img {
+    width: 200px;
+    height: 200px;
+    margin-left: 3rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navBar img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.Choose{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    height: 8vh;
+    background-color: inherit;
+    margin-left: 6rem;
+}
+
+.Choose-button {
+    font-family: "Audiowide", sans-serif;
+    background-color: inherit;
+    color: white;
+    font-size: 130%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 2.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(51, 211, 255);
+    transition: transform 0.3s ease-in-out, 
+                background-color 0.3s ease-in-out, 
+                color 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.Choose button a {
+    color: inherit;         /* Usa il colore del bottone */
+    text-decoration: none;  /* Rimuove la sottolineatura */
+}
+
+.Choose-button:hover{
+    background-color: rgb(21, 92, 111);
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out, 
+                background-color 0.3s ease-in-out, 
+                color 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgb(63, 213, 255);
+} 
+
+.Circles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.circle {
+    font-family: "Audiowide", sans-serif;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    margin: 0 10px;
+    filter: saturate(0%);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: zoomIn 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out,
+                box-shadow 0.5s ease-in-out,
+                saturate 0.3s ease-in-out;
+
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    filter: saturate(100%);
+    transition: transform 0.3s ease-in-out,
+                box-shadow 0.3s ease-in-out,
+                saturate 0.3s ease-in-out;
+}
+
+.circle:nth-child(1) {
+    background-image: url("./image/GitHub.png");
+    
+}
+
+.circle:nth-child(1):hover {
+    box-shadow: 0 0 15px 0 rgb(255, 255, 255);
+    
+}
+.circle:nth-child(2) {
+    background-image: url("./image/Instagram.png");
+    
+}
+
+.circle:nth-child(2):hover {
+    box-shadow: 
+        0 -5px 15px 0 rgb(159, 15, 255), /* Ombra in alto a destra */
+        0 5px 15px 0 rgb(255, 69, 22); /* Ombra per il resto */
+}
+
+.circle:nth-child(3) {
+    background-image: url("./image/Telegram.png");
+}
+
+.circle:nth-child(3):hover {
+    box-shadow: 0 0 15px 0 rgb(0, 183, 255);
+}
+
+.container {
+    font-size: 120%;
+    width: 100vw;
+    height: 40%;
+    background-color: inherit;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.containerMe {
+    width: 100vw;
+    background-color: inherit;
+    font-family: "Audiowide", sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.myName {
+    color: white;
+    font-size: 180%;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    transition: 1s;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.moons-hole {
+    content: "";
+    position: absolute; 
+    opacity: 1;
+    transition: 1s;    
+}
+
+.moon-hole {
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(0px);
+}
+
+.moon-hole:nth-child(1) {
+    background-color: rgb(85, 85, 85);
+    height: 5px;
+    width: 5px;
+    top: 26px;
+    left: 20px;
+}
+
+.moon-hole:nth-child(2) {
+    background-color: rgb(85, 85, 85);
+    height: 10px;
+    width: 10px;
+    top: 16px;
+    left: 7px;
+}
+
+.moon-hole:nth-child(3) {
+    background-color: rgb(85, 85, 85);
+    height: 4px;
+    width: 4px;
+    top: 12px;
+    left: 21px;
+}
+
+input:checked + .slider {
+    background-color: #62cff0;
+}
+
+input:checked + .slider:before {
+    transform: translateX(52px);
+    background-color: orange;
+}
+
+input:checked + .slider .moons-hole {
+    transform: translateX(52px);
+    opacity: 0;
+}
+
+.stars {
+    right: 6px;
+    top: 0;
+    bottom: 0;
+    transition: 1s;   
+    transform: translateY(0px); 
+}
+
+.star {
+    position: absolute;
+    fill: white;
+    animation: star-twinkle 2s infinite;
+    opacity: 1;
+}
+
+  /* Posizionamento casuale dei puntini */
+.star:nth-child(1) {
+    top: 5px;
+    right: 29px;
+    width: 20px;
+    animation-delay: 0.3s;
+}
+
+.star:nth-child(2) {
+    top: 18px;
+    right: 9px;
+    width: 15px;
+}
+
+.star:nth-child(3) {
+    top: 5px;
+    right: 15px;
+    width: 10px;
+    animation-delay: 0.6s;
+}
+
+.star:nth-child(4) {
+    top: 26px;
+    right: 28px;
+    width: 12px;
+    animation-delay: 0.9s;
+}
+
+.star:nth-child(5) {
+    top: 2px;
+    right: 50px;
+    width: 8px;
+    animation-delay: 1.2s;
+}
+
+input:checked + .slider .stars {
+    transform: translateY(-32px);
+    opacity: 0;
+}
+
+@keyframes star-twinkle {
+    0% {
+      transform: scale(1);
+    }
+  
+    40% {
+      transform: scale(1.2);
+    }
+  
+    80% {
+      transform: scale(0.8);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
+
+.clouds {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    transition: 1s;
+    transform: translateX(-55px);
+}
+
+.black-clouds {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    transition: 1s;
+    transform: translateX(-55px);
+    opacity: 0;
+    z-index: 0;
+}
+
+.black-cloud {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #555; /* Grigio più scuro per simulare nuvola */    opacity: 60%;
+    border-radius: 50%;
+    animation: cloud-move 6s infinite;
+    animation-delay: 1s;
+}
+
+.black-cloud:nth-child(1) {
+    top: 1px;
+    right: 3px;
+}
+
+.black-cloud:nth-child(2) {
+    top: 15px;
+    left: 9px;
+}
+
+.black-cloud:nth-child(3) {
+    top: 20px;
+    left: 27px;
+}
+
+input:checked + .slider .black-clouds {
+    transform: translateX(32px);
+    opacity: 1;
+}
+
+.cloud {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    animation: cloud-move 6s infinite;
+}
+
+.cloud:nth-child(1) {
+    top: 0;
+    height: 21px;
+    width: 21px;
+    right: 14px;
+}
+
+.cloud:nth-child(2) {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 14px;
+    right: 6px;
+}
+
+.cloud:nth-child(3) {
+    height: 23px;
+    width: 23px;
+    top: 28px;
+    left: 4px;
+}
+
+.cloud:nth-child(4) {
+    top: 26px;
+    left:20px;
+}
+
+.cloud:nth-child(5) {
+    top: 30px;
+    left: 30px;
+}
+ 
+.cloud:nth-child(6) {
+    top: 27px;
+    left: 46px;
+}
+
+.cloud:nth-child(7) {
+    top: 31px;
+    left: 58px;
+}
+
+input:checked + .slider .clouds {
+    transform: translateX(32px);
+    opacity: 1;
+}
+
+@keyframes cloud-move {
+    0% {
+      transform: translateX(-32px);
+    }
+  
+    40% {
+      transform: translateX(-36px);
+    }
+  
+    80% {
+      transform: translateX(-28px);
+    }
+  
+    100% {
+      transform: translateX(-32px);
+    }
+}
+
+@media (min-width: 1364px) {
+    .containerMe h2 {
+        font-size: 1.5rem;
+    }
+    .myName {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1364px) and (min-width: 1024px) {
+    .navBar {
+        height: 200px;
+        width: 100vw;
+    }
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+    .Choose {
+        margin-left: 8rem;
+    }
+    .Choose-button {
+        font-size: 110%;
+        height: 40px;
+        padding: 0.5rem 2rem;
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+    .containerMe h2 {
+        font-size: 1.3rem;
+    }
+    .myName {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1220px) and (min-width: 1100px) {
+    .Choose-button {
+        font-size: 90%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1024px) {
+    .navBar {
+        height: 150px;
+        width: 100vw;
+    }
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+    .Choose {
+        margin-left: 6rem;
+    }
+    .Choose-button {
+        font-size: 80%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .Circles {
+        margin-right: 0rem;
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 852px) {
+    .navBar {
+        height: 200px;
+        width: 100vw;
+    }
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+    .Choose {
+        margin-left: 5rem;
+    }
+    .Choose-button {
+        font-size: 70%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .Choose-button:hover {
+        transform: scale(1.1);
+    }
+    .Circles{
+        margin-top: 3.5rem;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .circle {
+        width: 45px;
+        height: 45px;
+    }
+    .containerMe h2 {
+        font-size: 1rem;
+    }
+    .myName {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 852px) and (min-width: 768px) {
+    .navBar {
+        height: 170px;
+        width: 100vw;
+    }
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+    .Choose {
+        margin-left: 4rem;
+    }
+    .Choose-button {
+        font-size: 60%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .Circles {
+        margin-top: 3.5rem;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+    .containerMe h2 {
+        font-size: 1rem;
+    }
+    .myName {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 647px){
+    .navBar {
+        height: 170px;
+        width: 100vw;
+    }
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+    .Choose {
+        margin-left: 1rem;
+    }
+    .Choose-button {
+        font-size: 60%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .Circles {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+    .containerMe h2 {
+        font-size: 1rem;
+    }
+    .myName {
+        font-size:  1.9em;
+    }
+}
+
+@media (max-width: 647px) and (min-width: 480px){
+    .navBar {
+        height: 120px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 80px;
+        height: 80px;
+    }
+    .Choose {
+        margin-left: 2rem;
+    }
+    .Choose-button {
+        font-size: 50%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
+    .containerMe h2 {
+        font-size: 0.8rem;
+    }
+    .myName {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 477px){
+    .navBar {
+        height: 120px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 60px;
+        height: 60px;
+    }
+    .Choose {
+        margin-left: 3rem;
+    }
+    .Choose-button {
+        font-size: 45%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
+    .container {
+        height: 90px;
+    }
+    .containerMe h2 {
+        font-size: 0.8rem;
+    }
+    .myName {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 495px) and (min-width: 400px){
+    .navBar {
+        height: 120px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 60px;
+        height: 60px;
+    }
+    .Choose {
+        margin-left: 3rem;
+    }
+    .Choose-button {
+        font-size: 40%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 20px;
+        height: 20px;
+    }
+    .container {
+        height: 90px;
+    }
+    .containerMe h2 {
+        font-size: 0.8rem;
+    }
+    .myName {
+        font-size: 1.6em;
+    }
+}
+    

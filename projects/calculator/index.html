@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="display" disabled /></td>
+            </tr>
+            <tr>
+                <td><button class="top-calculator" onclick="clearDisplay()">AC</button></td>
+                <td><button class="top-calculator" onclick="del()">DEL</button></td>
+                <td><button class="top-calculator" onclick="appendCharacter('%')">%</button></td>
+                <td><button class="right-calculator" onclick="appendCharacter('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCharacter('7')">7</button></td>
+                <td><button onclick="appendCharacter('8')">8</button></td>
+                <td><button onclick="appendCharacter('9')">9</button></td>
+                <td><button class="right-calculator" onclick="appendCharacter('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCharacter('4')">4</button></td>
+                <td><button onclick="appendCharacter('5')">5</button></td>
+                <td><button onclick="appendCharacter('6')">6</button></td>
+                <td><button class="right-calculator" onclick="appendCharacter('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCharacter('1')">1</button></td>
+                <td><button onclick="appendCharacter('2')">2</button></td>
+                <td><button onclick="appendCharacter('3')">3</button></td>
+                <td><button class="right-calculator" onclick="appendCharacter('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button style="width: 100%;" onclick="appendCharacter('0')">0</button></td>
+                <td><button onclick="appendCharacter(',')">,</button></td>
+                <td><button class="right-calculator" onclick="calculate()">=</button></td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
