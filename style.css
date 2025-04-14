@@ -839,7 +839,7 @@ input:checked + .slider .clouds {
     }
     .container {
         margin-top: 30px;
-        height: 90px;
+        height: 70px;
     }
     .containerMe h2 {
         font-size: 10px;
@@ -878,7 +878,7 @@ input:checked + .slider .clouds {
     }
     .container {
         margin-top: 20px;
-        height: 70px;
+        height: 50px;
     }
     .containerMe h2 {
         font-size: 9px;
@@ -902,7 +902,7 @@ input:checked + .slider .clouds {
         margin-left: 2rem;
     }
     .Choose-button {
-        font-size: 200px;
+        font-size: 2px;
         height: 20px;
         padding: 0.5rem 1.5rem;
         box-shadow: none;
@@ -917,13 +917,16 @@ input:checked + .slider .clouds {
     }
     .container {
         margin-top: 30px;
-        height: 60px;
+        height: 40px;
     }
     .containerMe h2 {
-        font-size: 8px;
+        font-size: 5px;
     }
     .myName {
-        font-size: 16px;
+        font-size: 10px;
+    }
+    .switch {
+        transform: scale(0.5);
     }
 }
 
@@ -956,13 +959,16 @@ input:checked + .slider .clouds {
     }
     .container {
         margin-top: 30px;
-        height: 50px;
+        height: 30px;
     }
     .containerMe h2 {
-        font-size: 7px;
+        font-size: 4px;
     }
     .myName {
-        font-size: 14px;
+        font-size: 8px;
+    }
+    .switch {
+        transform: scale(0.3);
     }
 }
 
@@ -973,14 +979,14 @@ input:checked + .slider .clouds {
     }
     .navBar img {
         margin: 0;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
     .Choose {
         margin-left: 2rem;
     }
     .Choose-button {
-        font-size: 10px;
+        font-size: 1px;
         height: 20px;
         padding: 0.5rem 1.5rem;
         box-shadow: none;
@@ -990,20 +996,20 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 40px;
-        height: 40px;
+        width: 5px;
+        height: 5px;
     }
     .container {
         margin-top: 30px;
-        height: 40px;
+        height: 20px;
     }
     .containerMe h2 {
-        font-size: 6px;
+        font-size: 3px;
     }
     .myName {
-        font-size: 12px;
+        font-size: 7px;
     }
     .switch {
-        transform: scale(0.5);
+        transform: scale(0.2);
     }
 }
