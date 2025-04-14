@@ -641,7 +641,7 @@ input:checked + .slider .clouds {
         margin-left: 1rem;
     }
     .Choose-button {
-        font-size: 60%;
+        font-size: 160%;
         height: 30px;
         padding: 0.5rem 1.5rem;
     }
@@ -722,44 +722,6 @@ input:checked + .slider .clouds {
     .circle {
         width: 30px;
         height: 30px;
-    }
-    .container {
-        height: 90px;
-    }
-    .containerMe h2 {
-        font-size: 0.8rem;
-    }
-    .myName {
-        font-size: 1.6em;
-    }
-}
-
-@media (max-width: 495px) and (min-width: 451px){
-    .navBar {
-        height: 120px;
-        width: 100vw;
-    }
-    .navBar img {
-        margin: 0;
-        width: 50px;
-        height: 50px;
-    }
-    .Choose {
-        margin-left: 3rem;
-    }
-    .Choose-button {
-        font-size: 40%;
-        height: 30px;
-        padding: 0.5rem 1.5rem;
-        box-shadow: none;
-    }
-    .Circles {
-        margin-right: 2rem;
-        flex-direction: column;
-    }
-    .circle {
-        width: 18px;
-        height: 18px;
     }
     .container {
         height: 90px;
