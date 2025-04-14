@@ -796,8 +796,8 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 15px;
-        height: 15px;
+        width: 150px;
+        height: 150px;
     }
     .container {
         height: 90px;
@@ -954,8 +954,8 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 50px;
-        height: 50px;
+        width: 5px;
+        height: 5px;
     }
     .container {
         margin-top: 30px;
@@ -996,8 +996,8 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 50px;
-        height: 50px;
+        width: 5px;
+        height: 5px;
     }
     .container {
         margin-top: 30px;
