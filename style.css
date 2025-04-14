@@ -980,7 +980,7 @@ input:checked + .slider .clouds {
         margin-left: 2rem;
     }
     .Choose-button {
-        font-size: 10px;
+        font-size: 80px;
         height: 20px;
         padding: 0.5rem 1.5rem;
         box-shadow: none;
