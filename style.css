@@ -851,7 +851,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 391px) and (min-width: 360px){
     .navBar {
-        height: 180px;
+        height: 80px;
         width: 100vw;
     }
     .navBar img {
@@ -890,7 +890,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 360px) and (min-width: 320px){
     .navBar {
-        height: 180px;
+        height: 80px;
         width: 100vw;
     }
     .navBar img {
@@ -932,7 +932,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 320px) and (min-width: 280px){
     .navBar {
-        height: 180px;
+        height: 80px;
         width: 100vw;
     }
     .navBar img {
@@ -954,8 +954,8 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 5px;
-        height: 5px;
+        width: 50px;
+        height: 50px;
     }
     .container {
         margin-top: 30px;
@@ -974,7 +974,7 @@ input:checked + .slider .clouds {
 
 @media (max-width: 280px) and (min-width: 240px){
     .navBar {
-        height: 120px;
+        height: 80px;
         width: 100vw;
     }
     .navBar img {
@@ -996,8 +996,8 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 5px;
-        height: 5px;
+        width: 50px;
+        height: 50px;
     }
     .container {
         margin-top: 30px;
