@@ -627,48 +627,341 @@ input:checked + .slider .clouds {
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* Esempio: navbar in colonna */
+@media (max-width: 768px) and (min-width: 647px){
     .navBar {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+        height: 170px;
+        width: 100vw;
     }
-  
+    .navBar img {
+        margin: 0;
+        width: 100px;
+        height: 100px;
+    }
     .Choose {
-      flex-direction: column;
-      align-items: center;
+        margin-left: 1rem;
     }
-  
     .Choose-button {
-      font-size: 2px;
-      width: 100%;
-      text-align: center;
-      padding: 0.75rem;
+        font-size: 60%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
     }
-  
-    #logo {
-      width: 120px;
-      height: auto;
-    }
-  
     .Circles {
-      flex-direction: row;
-      justify-content: center;
-      gap: 1rem;
+        margin-top: 2rem;
+        flex-direction: column;
     }
-  
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
     .containerMe h2 {
-      font-size: 1.5rem;
-      text-align: center;
+        font-size: 1rem;
     }
-  
     .myName {
-      font-size: 2rem;
+        font-size:  1.9em;
     }
-  
-    .switch {
-      transform: scale(0.8);
-      margin-top: 1rem;
+}
+
+@media (max-width: 647px) and (min-width: 480px){
+    .navBar {
+        height: 120px;
+        width: 100vw;
     }
-  }
+    .navBar img {
+        margin: 0;
+        width: 80px;
+        height: 80px;
+    }
+    .Choose {
+        margin-left: 1rem;
+    }
+    .Choose-button {
+        font-size: 50%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
+    .containerMe h2 {
+        font-size: 0.8rem;
+    }
+    .myName {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 477px){
+    .navBar {
+        height: 120px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 60px;
+        height: 60px;
+    }
+    .Choose {
+        margin-left: 1rem;
+    }
+    .Choose-button {
+        font-size: 45%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
+    .container {
+        height: 90px;
+    }
+    .containerMe h2 {
+        font-size: 0.8rem;
+    }
+    .myName {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 495px) and (min-width: 451px){
+    .navBar {
+        height: 120px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+    }
+    .Choose {
+        margin-left: 3rem;
+    }
+    .Choose-button {
+        font-size: 40%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 18px;
+        height: 18px;
+    }
+    .container {
+        height: 90px;
+    }
+    .containerMe h2 {
+        font-size: 0.8rem;
+    }
+    .myName {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 451px) and (min-width: 420px){
+    .navBar {
+        height: 120px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 45px;
+        height: 45px;
+    }
+    .Choose {
+        margin-left: 2rem;
+    }
+    .Choose-button {
+        font-size: 5px;
+        height: 20px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+    .container {
+        height: 90px;
+    }
+    .containerMe h2 {
+        font-size: 0.8rem;
+    }
+    .myName {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 391px){
+    .navBar {
+        height: 80px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .Choose {
+        margin-left: 2rem;
+    }
+    .Choose-button {
+        font-size: 4px;
+        height: 20px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 13px;
+        height: 13px;
+    }
+    .container {
+        margin-top: 30px;
+        height: 90px;
+    }
+    .containerMe h2 {
+        font-size: 10px;
+    }
+    .myName {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 391px) and (min-width: 360px){
+    .navBar {
+        height: 80px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 30px;
+        height: 30px;
+    }
+    .Choose {
+        margin-left: 2rem;
+    }
+    .Choose-button {
+        font-size: 2px;
+        height: 20px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 7px;
+        height: 7px;
+    }
+    .container {
+        margin-top: 20px;
+        height: 70px;
+    }
+    .containerMe h2 {
+        font-size: 9px;
+    }
+    .myName {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) and (min-width: 320px){
+    .navBar {
+        height: 80px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 30px;
+        height: 30px;
+    }
+    .Choose {
+        margin-left: 2rem;
+    }
+    .Choose-button {
+        font-size: 2px;
+        height: 20px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 7px;
+        height: 7px;
+    }
+    .container {
+        margin-top: 30px;
+        height: 60px;
+    }
+    .containerMe h2 {
+        font-size: 8px;
+    }
+    .myName {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) and (min-width: 280px){
+    .navBar {
+        height: 80px;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 30px;
+        height: 30px;
+    }
+    .Choose {
+        margin-left: 2rem;
+    }
+    .Choose-button {
+        font-size: 2px;
+        height: 20px;
+        padding: 0.5rem 1.5rem;
+        box-shadow: none;
+    }
+    .Circles {
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 5px;
+        height: 5px;
+    }
+    .container {
+        margin-top: 30px;
+        height: 50px;
+    }
+    .containerMe h2 {
+        font-size: 7px;
+    }
+    .myName {
+        font-size: 14px;
+    }
+}
