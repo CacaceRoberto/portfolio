@@ -553,6 +553,8 @@ input:checked + .slider .clouds {
     }
     .Circles {
         margin-right: 0rem;
+        flex-direction: column;
+        align-items: center;
     }
     .circle {
         width: 40px;
