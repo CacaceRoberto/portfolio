@@ -555,3 +555,109 @@ input:checked + .slider .clouds {
         height: 50px;
     }
 }
+
+@media (max-width: 1024px) and (min-width: 852px) {
+    .navBar {
+        height: 200px;
+        width: 100vw;
+    }
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+    .Choose {
+        margin-left: 5rem;
+    }
+    .Choose-button {
+        font-size: 70%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .Choose-button:hover {
+        transform: scale(1.1);
+    }
+    .Circles{
+        margin-top: 3.5rem;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .circle {
+        width: 45px;
+        height: 45px;
+    }
+    .containerMe h2 {
+        font-size: 1rem;
+    }
+    .myName {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 852px) and (min-width: 768px) {
+    .navBar {
+        height: 170px;
+        width: 100vw;
+    }
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+    .Choose {
+        margin-left: 4rem;
+    }
+    .Choose-button {
+        font-size: 60%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .Circles {
+        margin-top: 3.5rem;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+    .containerMe h2 {
+        font-size: 1rem;
+    }
+    .myName {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        height: 20%;
+        width: 100vw;
+    }
+    .navBar img {
+        margin: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .Choose {
+        margin-left: 1rem;
+    }
+    .Choose-button {
+        font-size: 50%;
+        height: 30px;
+        padding: 0.5rem 1.5rem;
+    }
+    .Circles {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+    .containerMe h2 {
+        font-size: 1rem;
+    }
+    .myName {
+        font-size:  1.9em;
+    }
+}
+
