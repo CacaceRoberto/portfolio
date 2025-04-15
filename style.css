@@ -538,6 +538,9 @@ input:checked + .slider .clouds {
 }
 
 @media (max-width: 480px) {
+    .navBar {
+        justify-content: center;
+    }
     .navBar img {
         margin: 1rem;
         width: 100px;
@@ -550,7 +553,7 @@ input:checked + .slider .clouds {
         padding: 0.5rem 1.5rem;
     }
     .Circles {
-        margin-right: 3rem;
+        margin-right: 0rem;
     }
     .circle {
         width: 40px;
