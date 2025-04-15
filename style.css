@@ -812,13 +812,13 @@ input:checked + .slider .clouds {
 
 @media (max-width: 420px) and (min-width: 391px){
     .navBar {
-        height: 80px;
+        height: 10%;
         width: 100vw;
     }
     .navBar img {
         margin: 0;
-        width: 40px;
-        height: 40px;
+        width: 100px;
+        height: 100px;
     }
     .Choose {
         margin-left: 2rem;
