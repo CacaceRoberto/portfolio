@@ -837,13 +837,13 @@ input:checked + .slider .clouds {
         height: 30px;
     }
     .container {
-        margin-top: 100px;
+        margin-top: 50px;
         height: 70px;
     }
     .containerMe h2 {
-        font-size: 10px;
+        font-size: 15px;
     }
     .myName {
-        font-size: 18px;
+        font-size: 25px;
     }
 }
