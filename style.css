@@ -627,37 +627,3 @@ input:checked + .slider .clouds {
     }
 }
 
-@media (max-width: 768px) and (min-width: 647px){
-    .navBar {
-        height: 170px;
-        width: 100vw;
-    }
-    .navBar img {
-        margin: 0;
-        width: 100px;
-        height: 100px;
-    }
-    .Choose {
-        margin-left: 1rem;
-    }
-    .Choose-button {
-        font-size: 50%;
-        height: 30px;
-        padding: 0.5rem 1.5rem;
-    }
-    .Circles {
-        margin-top: 2rem;
-        flex-direction: column;
-    }
-    .circle {
-        width: 40px;
-        height: 40px;
-    }
-    .containerMe h2 {
-        font-size: 1rem;
-    }
-    .myName {
-        font-size:  1.9em;
-    }
-}
-
