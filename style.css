@@ -544,10 +544,10 @@ input:checked + .slider .clouds {
         height: 100px;
     }
     .Choose-button {
+        margin-right: 5rem;
         font-size: 100%;
         height: 30px;
         padding: 0.5rem 1.5rem;
-        box-shadow: none;
     }
     .Circles {
         margin-right: 3rem;
@@ -560,10 +560,10 @@ input:checked + .slider .clouds {
         height: 90px;
     }
     .containerMe h2 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .myName {
-        font-size: 1.6em;
+        font-size: 2em;
     }
 }
 
