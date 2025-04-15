@@ -824,8 +824,8 @@ input:checked + .slider .clouds {
         margin-left: 2rem;
     }
     .Choose-button {
-        font-size: 20%;
-        height: 20px;
+        font-size: 10%;
+        height: 30px;
         padding: 0.5rem 1.5rem;
     }
     .Circles {
@@ -833,8 +833,8 @@ input:checked + .slider .clouds {
         flex-direction: column;
     }
     .circle {
-        width: 130px;
-        height: 130px;
+        width: 30px;
+        height: 30px;
     }
     .container {
         margin-top: 100px;
