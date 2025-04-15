@@ -627,7 +627,7 @@ input:checked + .slider .clouds {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 640px) {
     .navBar {
         height: 10%;
         width: 100vw;
