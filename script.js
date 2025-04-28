@@ -20,6 +20,6 @@ function changeMode() {
         container.style.color = "white";
         myName.style.color = "white"; 
         chooseButton.style.color = "white";
-        logo.src = "image/logo.png"; 
+        logo.src = "image/Logo.png"; 
     }
 }
