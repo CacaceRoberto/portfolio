@@ -31,14 +31,25 @@ body {
     border-radius: 30px;
     padding: 0.5rem 2.5rem;
     cursor: pointer;
-    
+    display: flex;
+    justify-content: space-between; /* Spazio tra il testo e l'icona */
+    align-items: center; /* Centra verticalmente il contenuto */
     box-shadow: 0 0 10px 0 rgb(51, 211, 255);
     transition: all 0.3s ease-in-out;
+}
+
+.navBar button svg.exit {
+    width: 40px; /* Rimpicciolisci l'icona */
+    height: 40px; /* Rimpicciolisci l'icona */
+    margin-left: 8px; /* Distanza tra la scritta e l'icona */
 }
 
 .navBar button a {
     color: inherit;
     text-decoration: none;  /* Rimuove la sottolineatura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navBar button:hover {
